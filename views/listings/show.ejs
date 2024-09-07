@@ -1,0 +1,22 @@
+<% layout('/layouts/boilerplate') -%>
+<body>
+    <div id="showcardmain" class="card" style="width: 50rem;">
+        <h1><b><%= foundListing.title %></b></h1>
+        <img id="showcard" src="<%=foundListing.image%>" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h4><b>$<%=foundListing.price%>/ night</b></h4>
+          <p class="card-text"><%=foundListing.description%></p>
+          <p class="card-text"><i><%=foundListing.location%>,<%=foundListing.country%></i></p>
+          <div class="buttonrow">
+            <form id="deletenupdate" action="/listing/<%=foundListing._id%>" method="POST">
+                <button type="submit" class="btn btn-danger btn-lg">Delete post</button>
+            </form>
+    
+            <form id="deletenupdate" action="/listing/<%=foundListing._id%>/update" method="GET">
+                <button type="submit" class="btn btn-danger btn-lg">Update post</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+</body>

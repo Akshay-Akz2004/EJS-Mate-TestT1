@@ -1,0 +1,32 @@
+<% layout('/layouts/boilerplate') -%>
+<body>
+    <h1 class="addnew">Add new</h1>
+    <form method="POST" action="/listing">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Product title</label>
+            <input name="title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter title">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Enter product description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="resize: none;"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Image</label>
+            <input name="image" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter image URL/link">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Enter amount</label>
+            <input name="price" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter price">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">City</label>
+            <input name="location" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter location">
+          </div>
+    
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Country</label>
+            <input name="country" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter country">
+          </div>
+          <button type="submit" class="btn btn-danger" inputmode="">Submit Now</button>
+    </form>
+</body>

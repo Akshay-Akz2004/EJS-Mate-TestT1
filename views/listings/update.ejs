@@ -1,0 +1,32 @@
+<% layout('/layouts/boilerplate') -%>
+<body>
+    <h1 class="addnew">Update Content</h1>
+    <form method="POST" action="/listing/<%=foundListing._id%>/update">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Product title</label>
+            <input name="title" type="text" class="form-control" id="exampleFormControlInput1" value="<%=foundListing.title%>">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Enter product description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="resize: none;"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Image</label>
+            <input name="image" type="text" class="form-control" id="exampleFormControlInput1" value="<%=foundListing.image%>">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Enter amount</label>
+            <input name="price" type="number" class="form-control" id="exampleFormControlInput1" value="<%=foundListing.price%>">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">City</label>
+            <input name="location" type="text" class="form-control" id="exampleFormControlInput1" value="<%=foundListing.location%>">
+          </div>
+    
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Country</label>
+            <input name="country" type="text" class="form-control" id="exampleFormControlInput1" value="<%=foundListing.country%>">
+          </div>
+          <button type="submit" class="btn btn-danger" inputmode="">Confirm Update</button>
+    </form>
+</body>
